@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Java Script</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/core.css">
+</head>
+<body>
+
+<div class="wrapper">
+    <div class="header">
+        <div class="container">
+            <div class="inner_header">
+                <a href="index.html">
+                    <div class="logotype">
+                        <h2>moon</h2>
+                    </div>
+                </a>
+                <ul class="menu">
+                    <li class="menu_link">
+                        <a href="pages/home_works.html">earth</a>
+                    </li>
+                    <li class="menu_link">
+                        <a href="pages/lessons.html">sun</a>
+                    </li>
+                    <li class="menu_link">
+                        <a href="pages/cards.html">Cards</a>
+                    </li>
+                </ul>
+                <button class="btn" id="btn-get">Click me!</button>
+            </div>
+        </div>
+    </div>
+    <canvas class="stars"></canvas>
+    <div class="slider_block">
+        <div class="container">
+            <div class="inner_slider">
+                <div class="inner_color">
+                    <h1><strong id="js-color">moon</strong></h1>
+                    <div class="colors-buttons">
+                        <button class="btn btn-color"></button>
+                        <button class="btn btn-color"></button>
+                        <button class="btn btn-color"></button>
+                        <button class="btn btn-color"></button>
+                    </div>
+                </div>
+                <div class="slider">
+                    <button class="btn-slide" id="prev">&lt;prev</button>
+                    <div class="slide active_slide">
+                        <div class="slide_card">
+                            <img src="./img/moon.png" alt="moon" class="moon">
+                            <p>The Moon is Earth's only natural satellite. It orbits at an average distance of 384,400 km (238,900 mi), about 30 times Earth's diameter.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide_card">
+                            <img src="img/moon_2.png" alt="moon" class="moon">
+                            <p>The Moon always presents the same side to Earth, because gravitational pull has locked its rotation to the planet.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide_card">
+                            <img src="img/moon_3.png" alt="moon" class="moon">
+                            <p>This results in the lunar day of 29.5 Earth days matching the lunar month.</p>
+                        </div>
+                    </div>
+                    <div class="slide">
+                        <div class="slide_card">
+                            <img src="img/moon_4.png" alt="moon" class="moon_yl">
+                            <p>The Moon's gravitational pull – and to a lesser extent the Sun's – are the main drivers of the tides.</p>
+                        </div>
+                    </div>
+                    <button class="btn-slide" id="next">next&gt;</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="botlle">
+        <div class="container">
+            <div class="bottle_inner">
+<!--                <a href="pages/monster.html">-->
+                    <div class="bowl">
+                        <img class="earth_bowl" src="img/earth.png">
+                        <img class="moon_bowl" src="img/moon.png">
+                    </div>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="block_video">
+        <div class="container">
+            <div class="inner_block_video">
+                <iframe width="1128" height="634" src="https://www.youtube.com/embed/cFC71rFejvo" title="Clair de Lune 4K Version - Moon Images from NASA&#39;s Lunar Reconnaissance Orbiter" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <a href="" target="_blank">
+                <div class="inner_footer">
+                    <h2>Made by Aidana</h2>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+<div class="modal">
+    <div class="modal_dialog">
+        <div class="modal_content">
+            <form action="#">
+                <div class="modal_close">&times;</div>
+                <div class="modal_title">Мы свяжемся с вами как можно быстрее!</div>
+                <input
+                    required
+                    placeholder="Ваше имя"
+                    name="name"
+                    type="text"
+                    class="modal_input"
+                >
+                <input
+                    required
+                    placeholder="Ваш номер телефона"
+                    name="phone"
+                    type="text"
+                    class="modal_input"
+                >
+                <button class="btn btn_dark btn_min">Перезвонить мне</button>
+            </form>
+        </div>
+    </div>
+</div>
+
+</body>
+<script src="js/main.js"></script>
+<script src="js/modal.js"></script>
+</html>
